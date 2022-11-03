@@ -9,11 +9,10 @@ block content
   br
   div(id="bump") bump the count
   script.
-    var bump_count=0;
+    var bump=1;
+    var count = 0;
     function doBump() {
-    bump_count=bump_count+1;
-    document.getElementById("bump").innerHTML = "bump " +bump_count+ " times";
+    count = count+bump;
+    bump=bump+1;
+    document.getElementById("bump").innerHTML = "bump " +bump+ " count" +count;
    } 
-  br
-  br
-   a(href='pet') Go to pet search
